@@ -1,0 +1,1 @@
+setTimeout("window.open('file:///C:/Users/Qureshi%20Home/Desktop/Website/form/basket.html')",5000);

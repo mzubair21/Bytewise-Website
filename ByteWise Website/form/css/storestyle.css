@@ -1,0 +1,173 @@
+/*// POP-UP BASE STYLES //*/
+
+body{margin: 0; position: relative;background:linear-gradient(#c847f1,#380231);}
+body.pop-up{background: #222;}
+*{
+font-family: Calibri, sans-serif; 
+font-weight: normal;
+color: #fff;
+
+}
+h2{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.2em;
+    cursor: progress;
+    
+    
+    
+}
+h2:hover
+{box-shadow: 0px 0px 10px 6px white;
+    margin-left: 85px;
+     margin-right: 85px;
+    
+    color:#fff;
+    cursor: pointer;
+    transition:background 0s,transform 0.3s,1s ease;
+    background: linear-gradient(67deg, #090979 -10%, #850501 72%);}
+button:hover{
+  box-shadow: 0px 0px 50px 3px white;
+    margin-left: 85px;
+     margin-right: 85px;
+    color:#fff;
+    cursor: pointer;
+    transition:background 0s,transform 0.3s,1s ease;
+    background: linear-gradient(67deg, #090979 -10%, #850501 72%);  
+}
+
+
+
+
+h1{
+font-size: 48px;
+margin: 10px 0;
+}
+p{
+margin-bottom: 40px;
+}
+#pop-up{
+position: relative; 
+top: 200px; 
+width: 500px; 
+margin: 0 auto; 
+text-align: center;
+}
+#pop-up .container{
+background: #f0e4d4; 
+padding: 30px; 
+position: absolute; 
+top: 50px; 
+width: 100%; 
+box-sizing: border-box;
+}
+#pop-up input{
+padding: 10px;
+border: 0;
+border-radius: 10px 0 0 10px;
+border: 1px solid #333;
+font-size: 18px;
+}
+button{
+padding: 10px;
+border: 0;
+color: #fff;
+background: #333;
+margin-left: -5px;
+margin-left: -5px;
+border-radius: 0 10px 10px 0;
+border: 1px solid #333;
+font-size: 18px;
+}
+.cross{
+position: absolute;
+top: 10px;
+left: 10px;
+background: #555;
+color: #ddd;
+font-weight: bold;
+width: 22px;
+height: 22px;
+text-align: center;
+border-radius: 11px;
+}
+
+/*// POP-UP ANIMATION STYLES //*/
+#pop-up{
+   transform-origin: 10px 10px;
+    top: -400px;
+    animation: drop 0.5s ease forwards,swing 2s 3s ease forwards;  
+}
+
+
+@keyframes drop{
+0%{opacity:0}
+70%{transform: translateY(700px);}
+100%{transform: translateY(650px);opacity:1}
+}
+
+@keyframes swing{
+    0%{
+        transform: translateY(650px) rotateZ(0deg);   
+    }
+    40%{transform: translateY(650px) rotateZ(90deg); }
+    
+     70%{transform: translateY(650px) rotateZ(70deg); }
+    
+         100%{transform: translateY(650px) rotateZ(75deg);}
+}
+
+/*// BASKET BASE STYLES //*/
+
+header{
+padding: 10px 20px;
+border-bottom: 1px solid #eee;
+background: #fff;
+}
+header:after{
+display: block;
+content: "";
+clear: both;
+}
+.basket ul{
+padding: 0;
+margin-top: 40px;
+}
+.basket li{
+display: inline-block;
+list-style-type: none;
+width: 30%;
+margin: 30px 1.5%;
+text-align: center;
+}
+.basket button{
+border-radius: 10px;
+cursor: pointer;
+}
+.basket header div{
+float: right;
+position: relative;
+z-index: 1;
+}
+.basket header h1{
+float: left;
+}
+
+/*// BASKET ANIMATION STYLES //*/
+.zoom{
+    position: absolute;
+    top:40px;
+    right:50%;
+    width:40px;
+    opacity:0;
+    animation: zoom 2s forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cube-bezier(1,1.77,0,-0.52);
+}
+@keyframes zoom
+
+{
+0%{opacity: 0}
+50%{opacity: 1;} 
+100%{right:50px;opacity: 0;}
+
+}

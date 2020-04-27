@@ -1,0 +1,279 @@
+*{
+    bottom: 0px;
+     top:0px;
+     padding: 0;
+     margin:0;
+     font-family:sans-serif;
+     position: relative;
+     transition: background 1s,2s transform 1s,1s ease-out;
+}
+ .head{
+     position: sticky;
+     top:0;
+     left:0;
+     height: 70px ;
+     min-height:10px ;
+     padding: 10px;
+     background: white;
+     z-index: 2;
+}
+ .hero {
+     position: sticky;
+     background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+     height: 88%;
+}
+ .top-bar img {
+     right: 0;
+    top: 1%;
+     margin-right: 85%;
+     position: absolute;
+     width:170px;
+}
+ .top-button {
+     margin-top: 14px;
+     float:right;
+}
+ .top-button a {
+     transition: 0s;
+     margin: 0 8px;
+     padding:8px 20px;
+     border-radius:50px;
+     background: #fff;
+     color:#333;
+     text-decoration: none !important;
+     border:2px solid #555;
+}
+ .top-button a:hover {
+    background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+     border:none;
+     color:white;
+     text-decoration: none !important;
+}
+ .hero h1{
+     color:#fff;
+     font-size:70px;
+     font-weight: bold;
+     letter-spacing: 3px;
+}
+ .hero p{
+     color:#fff;
+}
+ .hero .container{
+     margin-top:0%;
+}
+ .start-btn{
+     background:transparent;
+     border:2px solid #fff;
+     width:140px;
+     height:40px;
+     border-radius: 50px;
+     color:white;
+     transition:background 0.3s,0.3s transform 0s,0.2s ease-out;
+     margin-left: 130;
+     top: 60;
+     right:60;
+}
+ .start-btn:hover {
+     background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+     box-shadow: 0px 0px 10px 2px white;
+     color:white;
+     text-decoration: none !important;
+     margin-left: 26%;
+}
+ .home-img img{
+     min-width:50px!important;
+     width: 779px;
+     height: 578px;
+     bottom: 0px;
+}
+ .home-img{
+     margin-left: -120px;
+}
+ .col-md-6 .welcome{
+     transition: background 1s,2s transform 1s,1s ease-out;
+     color: white;
+     margin-bottom:-100px;
+     margin-top: 23%;
+     font-size:240%;
+     margin-left:50px;
+     margin-bottom:1%;
+     font-weight:bold;
+     top:32;
+}
+ .hero>.container>.row>.col-md-6>.bytewise{
+     margin-top: 10%;
+     top:17;
+}
+ .hero>.container>.row>.col-md-6>p{
+     left:36;
+     top:30;
+}
+ .influencres{
+     z-index: 1;
+     padding: 30px 0;
+     background-color: #efefef;
+}
+ .influencres .container{
+    transition: background 1s,2s transform 1s,1s ease-out;
+     margin-bottom: -200px !important;
+}
+ .influencres h1{
+     margin:60px 0;
+     color:#555;
+}
+ .person-img{
+     height:400px;
+}
+ .person-img img{
+     height:100%;
+     width:100%;
+}
+ .person-details {
+    background: #fff;
+     padding:10px 0 1px;
+     margin-bottom:15px;
+}
+ .profile{
+     padding: 30px 0;
+     background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+}
+ .profile-card{
+     border-radius: 10px;
+     background:#fff;
+     box-shadow:0 2px 40px 0 rgba(17,38,125,0.18);
+     margin-bottom: -360px !important;
+     margin-top: 370px;
+}
+ .profile-details{
+     padding:40px;
+}
+ .profile-details h2{
+     color:#1E1865;
+     margin-bottom: 35px;
+}
+ .followers span{
+     display:inline-block;
+     color:#1E1865;
+     margin:35px 20px 35px 0;
+}
+ .profile-details h5,p{
+     color:#555;
+}
+ .btn-follow{
+     background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+     border:2px solid #fff;
+     width:130px;
+     height:40px;
+     border-radius: 54px;
+     color:white;
+     transition:background 0.3s,0.3s transform 0s,0.2s ease-out;
+     margin-bottom: 50px;
+}
+ .btn-follow:hover {
+    background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+     box-shadow: 0px 0px 10px 2px white;
+     margin-left: 10px;
+     color:white;
+     text-decoration: none !important;
+}
+ .profile-img{
+     text-align: center;
+}
+ .profile-img img{
+     width:84%;
+     min-width:350px;
+     margin-top: 23%;
+}
+ .footer{
+    transition: background 1s,2s transform 1s,1s ease-out;
+     padding: 40px 0 0px;
+     background:linear-gradient(-135deg,#1E1865 0%, #7F111C 80%);
+    /* margin-top: 193px;
+    */
+     margin-top: 331px;
+     height: 207px 
+}
+ .store-icon img{
+     width:150px;
+     margin:0px 10px 30px 
+}
+ .footer-menu a{
+     display:inline-block;
+     width:120px;
+     color:#fff !important;
+     margin-bottom: 20px;
+}
+ .footer p{
+     color:Black;
+     font-size:14px;
+}
+ @media only screen and (max-width: 983px){
+     .home-img img{
+         width: 101%;
+         height: 168%;
+         left:30%;
+    }
+     .top-bar img{
+         margin-right: 650px;
+    }
+}
+ @media only screen and (max-width: 767px){
+     .top-bar img{
+         margin-right: 500px;
+    }
+     .hero>.container>.row{
+         margin-left:95px 
+    }
+     .hero{
+         height: 85%;
+    }
+     .start-btn{
+         margin-top: 9%;
+         margin-left:24%;
+    }
+     .hero>.container>.row>.col-md-6>p{
+         margin-left:50;
+         margin-top: 10%;
+    }
+     .influencres .container{
+         width:65%;
+    }
+     .person-img{
+         height:470px;
+    }
+     .profile-card{
+         margin-top: 40%;
+    }
+     .btn-follow{
+         margin-left:35%;
+    }
+     .profile-details{
+         height:400px;
+    }
+}
+ @media only screen and (max-width: 554px){
+     .hero>.container>.row{
+         margin:-10px 0px 0px 50px;
+    }
+     .person-img{
+         height:300px;
+    }
+     .btn-follow{
+         top:-20;
+    }
+     .top-bar img{
+         top:0;
+         margin-right:30%;
+    }
+     .top-button a{
+         padding:5px 9px ;
+         border-radius:20px 20px 20px 0;
+         left: 16px;
+         top:0px;
+    }
+     #b-12{
+         left:-130px;
+         border-radius:20px 20px 0px 20px;
+    }
+}
+ 

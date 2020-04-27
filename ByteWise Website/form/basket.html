@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>Bytewise Store</title>
+  <link rel="icon" type="image/icon" href="img/logo-bytewise.png">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script rel="stylesheet" type="application/javascript" src="js/store.js"></script>
+ <link href="css/storestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body class="basket">
+  <header>
+    <h1 style="font-family:'Century Gothic'; color:#333;">ByteWise Merchandise</h1>
+    <div class="basket-icon"><img src="img/basket.png"></div>
+  </header>
+  <ul class="products">
+    <li>
+      <img src="img/b1.png">
+      <h2>Half Sleeve T-shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+    <li>
+      <img src="img/b4.png">
+      <h2>Jaguar T-Shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+    <li>
+      <img src="img/b3.png">
+      <h2>ByteWise T-Shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+    <li>
+      <img src="img/b2.png">
+      <h2>LongLine T-Shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+    <li>
+      <img src="img/b5.png">
+      <h2>Baby Doll T-Shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+    <li>
+      <img src="img/b6.png">
+      <h2>Turtle T-Shirt</h2>
+      <button>Add to Basket</button>
+    </li>
+  </ul>
+  <script >
+      $("button").on("click",function(){
+        $(this).closest("li")
+        .find("img")
+        .clone()
+         .addClass("zoom")
+       .appendTo("body");
+      setTimeout(function(){
+                 $("zoom").remove();
+                 }, 1000);
+                     });
+  </script>
+</body>
